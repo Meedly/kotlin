@@ -10926,6 +10926,12 @@ public class DiagnosticsTestGenerated extends AbstractDiagnosticsTest {
                     doTest(fileName);
                 }
 
+                @TestMetadata("nonFoundInvokeDiagnostic.kt")
+                public void testNonFoundInvokeDiagnostic() throws Exception {
+                    String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/diagnostics/tests/inference/reportingImprovements/nonFoundInvokeDiagnostic.kt");
+                    doTest(fileName);
+                }
+
                 @TestMetadata("subtypeForInvariantWithErrorGenerics.kt")
                 public void testSubtypeForInvariantWithErrorGenerics() throws Exception {
                     String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/diagnostics/tests/inference/reportingImprovements/subtypeForInvariantWithErrorGenerics.kt");
